@@ -1,2 +1,0 @@
-#!/bin/bash
-usermod -l betty $UID
