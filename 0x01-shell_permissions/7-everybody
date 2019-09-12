@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ugo+x
+sudo ugo+x hello
