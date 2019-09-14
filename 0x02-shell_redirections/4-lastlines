@@ -1,1 +1,2 @@
-#!/b /etc/passwd
+#!/biin/bash
+tail /etc/passwd
