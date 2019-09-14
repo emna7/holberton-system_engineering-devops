@@ -1,2 +1,2 @@
 #!/bin/bash
-vi \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:).txt Holberton School
+echo > Holberton School "\*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)"
