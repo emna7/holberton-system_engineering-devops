@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i A/Z/g & c/e/g 
