@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -i A/Z/g & c/e/g 
+sed -i A/original/Z/g & sed c/original/e/g 
