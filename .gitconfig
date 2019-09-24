@@ -1,3 +1,6 @@
 [user]
 	email = bhmemna7@gmail.com
 	name = Emna
+[push]
+	default = matching
+[http]
