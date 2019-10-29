@@ -8,9 +8,11 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q!
+:wq!~
+:wq
 :q
 :w
-:q!
 
 # Search String History (newest to oldest):
 
@@ -26,18 +28,20 @@
 	ddd
 
 # File marks:
-'0  1  13  ~/holbertonschool-low_level_programming/README.md
-'1  1  0  ~/holberton-system_engineering-devops/0x02-shell_redirections/\*\'Holberton
-'2  5  0  ~/holbertonschool-zero_day/0x02-vi/101-delete_line
-'3  1  5  ~/holbertonschool-zero_day/0x02-vi/100-move_to_line
-'4  1  5  ~/holbertonschool-zero_day/0x02-vi/6-end_line
-'5  1  0  ~/holbertonschool-zero_day/0x02-vi/5-beginning_line
-'6  1  21  ~/holbertonschool-zero_day/0x02-vi/4-exiting
-'7  1  1  ~/holbertonschool-zero_day/0x02-vi/3-undoing
-'8  1  1  ~/holbertonschool-zero_day/0x02-vi/2-pasting
-'9  1  0  ~/holbertonschool-zero_day/0x02-vi/1-cutting
+'0  13  29  ~/holbertonschool-low_level_programming/0x02-functions_nested_loops/holberton.h
+'1  1  13  ~/holbertonschool-low_level_programming/README.md
+'2  1  0  ~/holberton-system_engineering-devops/0x02-shell_redirections/\*\'Holberton
+'3  5  0  ~/holbertonschool-zero_day/0x02-vi/101-delete_line
+'4  1  5  ~/holbertonschool-zero_day/0x02-vi/100-move_to_line
+'5  1  5  ~/holbertonschool-zero_day/0x02-vi/6-end_line
+'6  1  0  ~/holbertonschool-zero_day/0x02-vi/5-beginning_line
+'7  1  21  ~/holbertonschool-zero_day/0x02-vi/4-exiting
+'8  1  1  ~/holbertonschool-zero_day/0x02-vi/3-undoing
+'9  1  1  ~/holbertonschool-zero_day/0x02-vi/2-pasting
 
 # Jumplist (newest first):
+-'  13  29  ~/holbertonschool-low_level_programming/0x02-functions_nested_loops/holberton.h
+-'  1  0  ~/holbertonschool-low_level_programming/0x02-functions_nested_loops/holberton.h
 -'  1  13  ~/holbertonschool-low_level_programming/README.md
 -'  1  0  ~/holberton-system_engineering-devops/0x02-shell_redirections/\*\'Holberton
 -'  5  0  ~/holbertonschool-zero_day/0x02-vi/101-delete_line
@@ -135,9 +139,14 @@
 -'  1  1  ~/holbertonschool-zero_day/0x02-vi/2-pasting
 -'  1  0  ~/holbertonschool-zero_day/0x02-vi/1-cutting
 -'  1  0  ~/holbertonschool-zero_day/0x02-vi/0-inserting
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/0-inserting
 
 # History of marks within files (newest to oldest):
+
+> ~/holbertonschool-low_level_programming/0x02-functions_nested_loops/holberton.h
+	"	13	29
+	^	13	30
+	.	13	29
+	+	13	29
 
 > ~/holbertonschool-low_level_programming/README.md
 	"	1	13
