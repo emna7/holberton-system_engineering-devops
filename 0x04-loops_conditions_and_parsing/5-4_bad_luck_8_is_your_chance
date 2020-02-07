@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+# "bad luck" on the 4th iteration
+# "good luck" on the 8th iteration
+i="0"
+while [ $i -lt 10 ]; do
+if [ $i -eq 3 ]; then
+echo "bad luck"
+elif [ $i -eq 7 ]; then
+echo "good luck"
+else
+echo "Holberton School"
+fi
+i=$((i+1))
+done

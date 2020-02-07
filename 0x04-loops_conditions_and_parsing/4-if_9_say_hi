@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script displays "Holberton School" 9 out of 10 times
+# On the 9th time, "Hi" is displayed
+i="0"
+while [ $i -lt 10 ]; do
+echo "Holberton School"
+if [ $i -eq 8 ]; then
+echo "Hi"
+fi
+i=$((i+1))
+done
