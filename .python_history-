@@ -1,0 +1,21 @@
+a = "Python is cool"
+print(a[7:-5])
+a = "Python is cool"
+print(a[-2])
+import fibo
+fibo.fib(1000)
+fibo.fib2(100)
+squares = []
+for x in range(10):
+...     squares.append(x**2)
+...squares
+[(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+combs = []
+for x in [1,2,3]:
+for y in [3,1,4]:
+combs = []
+for x in [1,2,3]:
+    for y in [3,1,4]:
+        if x != y:
+            combs.append((x, y))
+combs

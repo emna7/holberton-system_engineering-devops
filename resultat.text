@@ -1,0 +1,36 @@
+total 64
+drwxr-xr-x 9 vagrant vagrant 4096 Sep 14 09:44 .
+drwxr-xr-x 4 root    root    4096 Sep 10 08:39 ..
+-rw------- 1 vagrant vagrant    0 Sep 10 15:45 .bash_history
+-rw-r--r-- 1 vagrant vagrant  220 Apr  9  2014 .bash_logout
+-rw-r--r-- 1 vagrant vagrant 3637 Apr  9  2014 .bashrc
+drwx------ 3 vagrant vagrant 4096 Sep 10 08:42 .cache
+drwx------ 3 vagrant vagrant 4096 Sep 10 13:48 .emacs.d
+drwxrwxr-x 3 vagrant vagrant 4096 Sep 14 09:27 emna
+drwxrwxr-x 8 vagrant vagrant 4096 Sep 11 09:22 .git
+-rw-rw-r-- 1 vagrant vagrant   48 Sep 10 09:37 .gitconfig
+drwxrwxr-x 7 vagrant vagrant 4096 Sep 10 15:45 holbertonschool-zero_day
+drwxrwxr-x 5 vagrant vagrant 4096 Sep 13 10:58 holberton-system_engineering-devops
+-rw-r--r-- 1 vagrant vagrant  675 Apr  9  2014 .profile
+-rw-rw-r-- 1 vagrant vagrant   76 Sep 11 09:21 README.md
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 14 09:44 resultat.text
+drwx------ 2 vagrant vagrant 4096 Sep 10 08:38 .ssh
+-rw------- 1 vagrant vagrant 7341 Sep 10 15:04 .viminfo
+total 68
+drwxr-xr-x 9 vagrant vagrant 4096 Sep 14 09:44 .
+drwxr-xr-x 4 root    root    4096 Sep 10 08:39 ..
+-rw------- 1 vagrant vagrant    0 Sep 10 15:45 .bash_history
+-rw-r--r-- 1 vagrant vagrant  220 Apr  9  2014 .bash_logout
+-rw-r--r-- 1 vagrant vagrant 3637 Apr  9  2014 .bashrc
+drwx------ 3 vagrant vagrant 4096 Sep 10 08:42 .cache
+drwx------ 3 vagrant vagrant 4096 Sep 10 13:48 .emacs.d
+drwxrwxr-x 3 vagrant vagrant 4096 Sep 14 09:27 emna
+drwxrwxr-x 8 vagrant vagrant 4096 Sep 11 09:22 .git
+-rw-rw-r-- 1 vagrant vagrant   48 Sep 10 09:37 .gitconfig
+drwxrwxr-x 7 vagrant vagrant 4096 Sep 10 15:45 holbertonschool-zero_day
+drwxrwxr-x 5 vagrant vagrant 4096 Sep 13 10:58 holberton-system_engineering-devops
+-rw-r--r-- 1 vagrant vagrant  675 Apr  9  2014 .profile
+-rw-rw-r-- 1 vagrant vagrant   76 Sep 11 09:21 README.md
+-rw-rw-r-- 1 vagrant vagrant  993 Sep 14 09:44 resultat.text
+drwx------ 2 vagrant vagrant 4096 Sep 10 08:38 .ssh
+-rw------- 1 vagrant vagrant 7341 Sep 10 15:04 .viminfo
