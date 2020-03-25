@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# a script tha installs nginx on your web-01 server
+sudo apt-get update -y
+sudo apt-get -y install nginx
+sudo /etc/init.d/nginx start
+sudo echo "Holberton School" > /usr/share/nginx/html/index/html
+sudo service nginx restart
