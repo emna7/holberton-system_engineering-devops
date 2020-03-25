@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configures a new nginx server with redirection
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo /etc/init.d/nginx start
+var="rewrite ^/redirect_me$ https://www.youtube.com/ permanent;\n\ttry_files $uri $uri/ =404;\n"
+sed -i 's/try_files $uri $uri/ =404;\n/$var' /etc/nginx/sites-available/default
+sudo nginx -s reload
