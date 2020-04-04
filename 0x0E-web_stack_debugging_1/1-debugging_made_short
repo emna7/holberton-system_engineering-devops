@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# nginx must be running
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx reload
-sudo pkill -o nginx
