@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # opening port 80
 cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/deafault
-Sudo Service nginx start
+Sudo Service nginx restart
