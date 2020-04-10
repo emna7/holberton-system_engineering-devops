@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Display information about a domain & its subdomains
+domain=$1
+subdomain=$2
+domain_info () {
+	if [ -z "$subdomain" ]
+	then
+		www_record=$(dig www."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $4 }')
+		www_dest=$(dig www."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $5 }')
+		echo "The subdomain www is a ${www_record//[$'\t\r\n ']} record and points to ${www_dest//[$'\t\r\n ']}"
+		lb_record=$(dig lb-01."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $4 }')
+		lb_dest=$(dig lb-01."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $5 }')
+		echo "The subdomain lb-01 is a ${lb_record//[$'\t\r\n ']} record and points to ${lb_dest//[$'\t\r\n ']}"
+		web_01_record=$(dig web-01."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $4 }')
+		web_01_dest=$(dig web-01."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $5 }')
+		echo "The subdomain web-01 is a ${web_01_record//[$'\t\r\n ']} record and points to ${web_01_dest//[$'\t\r\n ']}"
+		web_02_record=$(dig web-02."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $4 }')
+		web_02_dest=$(dig web-02."$domain" | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $5 }')
+		echo "The subdomain web-02 is a ${web_02_record//[$'\t\r\n ']} record and points to ${web_02_dest//[$'\t\r\n ']}"
+	else
+		record=$(dig $subdomain.$domain | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $4 }')
+		dest=$(dig $subdomain.$domain | grep -A1 'ANSWER SECTION:' | awk -F " " '{ print $5 }')
+		echo "The subdomain $subdomain is a ${record//[$'\t\r\n ']} record and points to ${dest//[$'\t\r\n ']}"
+	fi
+	return 0
+}
+domain_info "$domain"
