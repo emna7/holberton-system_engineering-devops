@@ -7,10 +7,10 @@ import requests
 def top_ten(subreddit):
     user = {"User-Agent": "custom"}
     request = requests.get("https://www.reddit.com/r/{}/hot.json"
-                       .format(subreddit), headers=user)
+                           .format(subreddit), headers=user)
     try:
         for i in range(10):
             print(request.json()
-              .get("data").get("children")[i].get("data").get("title"))
+                  .get("data").get("children")[i].get("data").get("title"))
     except:
         print("None")
