@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """gathering data
 """
-import requests
 import json
+import requests
 import sys
 if __name__ == '__main__':
     if len(sys.argv) == 2 and sys.argv[1].isdigit():
