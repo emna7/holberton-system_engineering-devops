@@ -1,25 +1,28 @@
 #!/usr/bin/python3
-"""a script that returns information about an employee
-"""
-
-
-if __name__ == '__main__':
-    import requests
-    import sys
-
-    url = 'https://jsonplaceholder.typicode.com'
-
-    employee = requests.get('{}/users/{}'.format(url, sys.argv[1]))
-    employee_name = employee.json().get('name')
-
-    tasks = requests.get('{}/todos?userId={}'.format(url, sys.argv[1]))
-    task_list = tasks.json()
-    total_tasks = len(task_list)
-    completed_tasks = sum(1 for task in task_list if task.get('completed'))
-
-    print('Employee {} is done with tasks({}/{}):'.format(employee_name,
-                                                          completed_tasks,
-                                                          total_tasks))
-    for task in task_list:
-        if task.get('completed'):
-            print('\t {}'.format(task.get('title')))
+import requests
+import json
+import sys
+users='https://jsonplaceholder.typicode.com/users'
+usr=requests.get(users)
+for i in usr.json():
+    for key,value in i.items():
+        if key=='id' and value==int(sys.argv[1]):
+            name=i['name']
+            print('Employee {} is done with tasks'.format(name), end="")
+j=0
+k=0
+todos='https://jsonplaceholder.typicode.com/todos'
+todo=requests.get(todos)
+for i in todo.json():
+    for key,value in i.items():
+        if key=='userId' and value==int(sys.argv[1]):
+            if i['title'] is not None:
+                k+=1
+            if i['completed']==True:
+                j+=1
+print ('({}/{}):'.format(j,k))
+for i in todo.json():
+    for key,value in i.items():
+        if key=='userId' and value==int(sys.argv[1]):
+            if i['completed']==True:
+                print('\t{}'.format(i['title']))
