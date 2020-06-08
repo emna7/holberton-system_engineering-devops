@@ -12,7 +12,8 @@ if __name__ == '__main__':
             for key, value in i.items():
                 if key == 'id' and value == int(sys.argv[1]):
                     name = i['name']
-                    print('Employee {} is done with tasks'.format(name), end="")
+                    print('Employee {} is done with tasks'.format(name),
+                          end="")
         j = 0
         k = 0
         todos = 'https://jsonplaceholder.typicode.com/todos'
